@@ -4,6 +4,14 @@ Bienvenido a la organización de GreatX Labs. Aquí se encuentra el código fuen
 
 ## Proyectos
 
+### Keiko (Proyecto Orquitas)
+[**keiko**](https://github.com/GreatXLabs/keiko) - **Monorepo** del ecosistema robótico autónomo distribuido para la competencia *"Inteligencia y Supervivencia en la Bahía de Caza"*. Centraliza en un solo repositorio:
+- **`keiko-server/`** - Servidor central multihilo en Java 21 LTS (Maven) con inferencia dual en **Neuroph 2.98**, comunicación TCP y Bluetooth SPP (`jSerialComm`), persistencia sincronizada en archivo e hilo auditor de estado.
+- **`keiko-sim/`** - Entorno de simulación 3D paramétrico en **Webots** y controladores en Python para validación física y generación de datasets.
+- **`firmware/`** - Firmware en C++ para **Arduino Mega 2560** (tracción 4WD L293D, 3× HC-SR04, 3× láser ToF VL53L0X, PCA9685, enlace HC-05 y Fail-Safe).
+- **`neuroph-train/`** - Sistema cliente/servidor en Java Swing sobre sockets TCP para entrenamiento distribuido de redes `.nnet`.
+- **`modelos-3d/`** - Diseños CAD en FreeCAD y mallas STL exportadas del chasis y el recolector.
+
 ### Ikaros
 
 Ikaros es un sistema de relevo de información y gestión basada en roles para misiones espaciales.
